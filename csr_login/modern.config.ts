@@ -24,6 +24,7 @@ export default defineConfig({
       appendPlugins([
         new ModuleFederationPlugin({
           name: 'login',
+          filename: 'remoteEntry.js',
           exposes: {
             '.': './src/exposedEntry.tsx',
             './button': './src/components/Button.tsx',

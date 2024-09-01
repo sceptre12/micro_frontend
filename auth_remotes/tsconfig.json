@@ -5,10 +5,16 @@
     "jsx": "preserve",
     "baseUrl": "./",
     "paths": {
-      "@/*": ["./src/*"],
+      "@/*": ["./*", "./src/*"],
       "@shared/*": ["./shared/*"]
     }
   },
-  "include": ["src", "shared", "config", "modern.config.ts"],
+  "include": [
+    "src",
+    "shared",
+    "config",
+    "modern.config.ts",
+    "tailwind.config.ts"
+  ],
   "exclude": ["**/node_modules"]
 }

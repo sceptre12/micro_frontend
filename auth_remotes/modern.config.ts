@@ -1,5 +1,6 @@
 import { appTools, defineConfig } from '@modern-js/app-tools';
 import { ModuleFederationPlugin } from '@module-federation/enhanced/rspack';
+import { tailwindcssPlugin } from '@modern-js/plugin-tailwindcss';
 
 const PORT = 3000;
 const MODULE_NAME = 'auth_remotes';
@@ -38,6 +39,7 @@ export default defineConfig({
     },
   },
   plugins: [
+    tailwindcssPlugin(),
     appTools({
       bundler: 'experimental-rspack',
     }),

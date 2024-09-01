@@ -1,5 +1,5 @@
 {
-  "name": "mono_repo_proj",
+  "name": "auth_remotes",
   "version": "0.1.0",
   "scripts": {
     "reset": "npx rimraf ./**/node_modules",
@@ -9,7 +9,7 @@
     "serve": "modern serve",
     "new": "modern new",
     "lint": "modern lint",
-    "prepare": "cd .. && husky mono_repo_proj.husky install",
+    "prepare": "husky install",
     "upgrade": "modern upgrade"
   },
   "engines": {
@@ -25,26 +25,23 @@
     "dist/"
   ],
   "dependencies": {
-    "@modern-js/runtime": "2.58.2",
+    "@modern-js/runtime": "2.58.3",
     "react": "~18.2.0",
-    "react-dom": "~18.2.0",
-    "zephyr-webpack-plugin": "^0.0.16"
+    "react-dom": "~18.2.0"
   },
   "devDependencies": {
-    "@modern-js-app/eslint-config": "2.58.2",
-    "@modern-js/app-tools": "2.58.2",
-    "@modern-js/eslint-config": "2.58.2",
-    "@modern-js/tsconfig": "2.58.2",
+    "@modern-js/app-tools": "2.58.3",
+    "@modern-js/eslint-config": "2.58.3",
+    "@modern-js/tsconfig": "2.58.3",
+    "@modern-js-app/eslint-config": "2.58.3",
+    "typescript": "~5.0.4",
     "@types/jest": "~29.2.4",
     "@types/node": "~16.11.7",
     "@types/react": "~18.0.26",
     "@types/react-dom": "~18.0.10",
-    "husky": "~8.0.1",
     "lint-staged": "~13.1.0",
-    "nx": "19.6.4",
     "prettier": "~2.8.1",
-    "rimraf": "~3.0.2",
-    "typescript": "~5.0.4"
-  },
-  "nx": {}
+    "husky": "~8.0.1",
+    "rimraf": "~3.0.2"
+  }
 }

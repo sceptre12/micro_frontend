@@ -29,8 +29,3 @@ log/
 **/*/typings/auto-generated
 
 modern.config.local.*
-
-
-
-.nx/cache
-.nx/workspace-data

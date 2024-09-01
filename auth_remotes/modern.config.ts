@@ -32,8 +32,10 @@ export default defineConfig({
       appendPlugins([
         new ModuleFederationPlugin({
           name: MODULE_NAME,
-          exposes: {},
-          shared: ['react', 'react-dom'],
+          exposes: {
+            './web_vitals': './src/lib/core_web_vitals/index.ts',
+          },
+          shared: ['react', 'react-dom', './web_vitals'],
         }),
       ]);
     },

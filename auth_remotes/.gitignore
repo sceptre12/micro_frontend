@@ -29,3 +29,6 @@ log/
 **/*/typings/auto-generated
 
 modern.config.local.*
+
+# Sentry Config File
+.sentryclirc

@@ -4,13 +4,14 @@
   "scripts": {
     "reset": "npx rimraf ./**/node_modules",
     "dev": "modern dev",
-    "build": "modern build",
+    "build": "modern build && pnpm sentry:sourcemaps",
     "start": "modern start",
     "serve": "modern serve",
     "new": "modern new",
     "lint": "modern lint",
     "prepare": "husky install",
-    "upgrade": "modern upgrade"
+    "upgrade": "modern upgrade",
+    "sentry:sourcemaps": "sentry-cli sourcemaps inject --org xavier-thomas --project javascript-react ./dist && sentry-cli sourcemaps upload --org xavier-thomas --project javascript-react ./dist"
   },
   "engines": {
     "node": ">=16.18.1"
@@ -29,6 +30,7 @@
     "@modern-js/runtime": "2.58.3",
     "@module-federation/enhanced": "^0.6.0",
     "@module-federation/modern-js": "^0.6.0",
+    "@sentry/cli": "^2.34.1",
     "@sentry/react": "^8.27.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",

@@ -13,4 +13,5 @@ export const launchCoreWebVitals = ({
   onLCP(customLogger, {
     reportAllChanges: debug,
   });
+  console.log("ON");
 };

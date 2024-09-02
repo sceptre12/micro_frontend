@@ -9,7 +9,7 @@ export default createModuleFederationConfig({
     './web_vitals': './src/lib/core_web_vitals/index.ts',
   },
   shared: {
-    react: { singleton: true },
-    'react-dom': { singleton: true }
+    react: { singleton: true, version: '18' },
+    'react-dom': { singleton: true, version: '18' }
   },
 });

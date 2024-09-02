@@ -9,7 +9,6 @@
     "serve": "modern serve",
     "new": "modern new",
     "lint": "modern lint",
-    "prepare": "husky install",
     "upgrade": "modern upgrade",
     "sentry:sourcemaps": "sentry-cli sourcemaps inject --org xavier-thomas --project javascript-react ./dist && sentry-cli sourcemaps upload --org xavier-thomas --project javascript-react ./dist"
   },
